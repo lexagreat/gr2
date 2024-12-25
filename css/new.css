@@ -1,0 +1,370 @@
+.eco-section__wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+.eco-section__wrapper > .eco-section__list {
+   display: none;
+}
+.eco-section__card {
+   height: 600px;
+   border-radius: 25px;
+   overflow: hidden;
+   padding: 40px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.eco-section__bg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+}
+.eco-section__bg img,
+.eco-section__bg video {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.eco-section__list {
+   display: flex;
+   gap: 24px;
+}
+.eco-section__list li {
+   border-radius: 16px;
+   flex: 0 0 281px;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   padding: 16px;
+   background-color: #f5f5f599;
+   backdrop-filter: blur(112px);
+}
+.eco-section__list li p {
+   font-family: "TT Norms Pro";
+   font-size: 16px;
+   line-height: 21.6px;
+   color: #838383;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+.eco-section__list li > span {
+   font-family: "Stolzl";
+   font-size: 32px;
+   line-height: 44.8px;
+   color: #151515;
+}
+.eco-section__main {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
+.eco-section__title {
+   font-family: "Stolzl";
+   font-size: 64px;
+   line-height: 70.4px;
+   color: white;
+}
+.eco-section__link {
+   display: flex;
+   gap: 12px;
+   font-family: "Stolzl";
+   font-size: 18px;
+
+   color: white;
+}
+.eco-section__footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid #dcdcdc;
+   padding-bottom: 32px;
+}
+.eco-section__footer ul {
+   display: flex;
+   gap: 24px;
+}
+.eco-section__footer ul li {
+   flex: 0 0 296px;
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   font-family: "TT Norms Pro";
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 19.6px;
+   color: #151515;
+}
+.eco-section__footer ul li:nth-child(1) {
+   padding-right: 24px;
+   border-right: 1px solid #dcdcdc;
+}
+.eco-section__btn {
+   background-color: #151515;
+   color: white;
+   box-shadow: 0px 0px 34px 10px #00000029;
+   display: flex;
+   align-items: center;
+   height: 56px;
+   padding: 0 24px;
+   border-radius: 38px;
+   font-family: "TT Norms Pro";
+   font-size: 18px;
+   font-weight: 500;
+   gap: 12px;
+}
+@media (max-width: 992px) {
+   .eco-section__wrapper {
+      gap: 24px;
+   }
+   .eco-section__card {
+      justify-content: end;
+      height: unset;
+      min-height: 350px;
+      padding: 16px;
+   }
+   .eco-section__bg {
+   }
+   .eco-section__card .eco-section__list {
+      display: none;
+   }
+   .eco-section__list li {
+      flex: unset;
+   }
+   .eco-section__list li p {
+   }
+   .eco-section__list li > span {
+   }
+   .eco-section__main {
+      gap: 16px;
+   }
+   .eco-section__title {
+      font-size: 32px;
+      line-height: 35px;
+   }
+   .eco-section__link {
+      font-size: 18px;
+   }
+   .eco-section__footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+   }
+   .eco-section__footer ul {
+      align-items: flex-start;
+      flex-direction: column;
+   }
+   .eco-section__footer ul li {
+      flex: unset;
+   }
+   .eco-section__footer ul li:nth-child(1) {
+      padding-right: 0;
+      border: 0;
+   }
+   .eco-section__btn {
+      width: 100%;
+      justify-content: center;
+   }
+   .eco-section__wrapper > .eco-section__list {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+   }
+}
+.directions-section {
+   margin-bottom: 104px;
+   margin-top: 104px;
+   background-color: #151515;
+   border-radius: 40px;
+}
+.directions-section__wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+   padding: 56px 0;
+}
+.directions-section__header {
+   display: flex;
+   justify-content: space-between;
+}
+.directions-section__header h2 {
+   font-family: "Stolzl";
+   font-size: 48px;
+   line-height: calc(57 / 48);
+   color: #ffffff;
+}
+.directions-section__header p {
+   flex: 0 0 416px;
+   font-family: "TT Norms Pro";
+   font-size: 20px;
+   line-height: calc(26 / 20);
+   color: #838383;
+}
+.directions-section__main {
+   display: flex;
+   justify-content: space-between;
+}
+.directions-section__subtitle {
+   font-family: "TT Norms Pro";
+   font-size: 32px;
+   font-weight: 500;
+   line-height: calc(38 / 32);
+   color: #838383;
+}
+.directions-section__list {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+   flex: 0 1 746px;
+}
+.direction-item {
+   padding-bottom: 24px;
+   border-bottom: 1px solid #676767;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+.direction-item__main {
+   flex: 0 0 518px;
+   display: flex;
+   gap: 12px;
+}
+.direction-item__index {
+   font-family: "TT Norms Pro";
+   font-size: 14px;
+   font-weight: 400;
+   color: white;
+}
+.direction-item__info {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+.direction-item__title {
+   font-family: "TT Norms Pro";
+   font-size: 32px;
+   font-weight: 500;
+   line-height: calc(38.4 / 32);
+   color: white;
+}
+.direction-item__text {
+   color: #838383;
+   font-family: "TT Norms Pro";
+   font-size: 16px;
+   line-height: calc(21 / 16);
+}
+.direction-item__image {
+   position: absolute;
+   top: 0;
+   right: 112px;
+   width: 200px;
+   height: 184px;
+   opacity: 0;
+   transition: 0.4s;
+}
+.direction-item__image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.direction-item__icon {
+   width: 56px;
+   height: 56px;
+   flex: 0 0 56px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background-color: #2d2d2d;
+   transition: 0.4s;
+}
+.direction-item:hover .direction-item__image {
+   opacity: 1;
+}
+.direction-item:hover .direction-item__icon {
+   rotate: 45deg;
+}
+@media (max-width: 992px) {
+   .directions-section {
+      border-radius: 24px;
+   }
+   .directions-section__wrapper {
+      padding: 32px 0;
+   }
+   .directions-section__header {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+   .directions-section__header h2 {
+      font-size: 32px;
+      flex: unset;
+   }
+   .directions-section__header p {
+      font-size: 16px;
+      flex: unset;
+   }
+   .directions-section__main {
+   }
+   .directions-section__subtitle {
+      display: none;
+   }
+   .directions-section__list {
+      flex: unset;
+      width: 100%;
+   }
+   .direction-item {
+      width: 100%;
+   }
+   .direction-item__main {
+      flex: unset;
+   }
+   .direction-item__index {
+      display: none;
+   }
+   .direction-item__info {
+   }
+   .direction-item__title {
+      font-size: 20px;
+      padding-right: 44px;
+   }
+   .direction-item__text {
+      font-size: 16px;
+   }
+   .direction-item__image {
+      position: relative;
+      top: unset;
+      right: unset;
+      opacity: 1;
+   }
+   .direction-item__image img {
+   }
+   .direction-item__icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 32px;
+      height: 32px;
+      flex: 0 0 32px;
+      rotate: 45deg;
+      translate: 0 -2px;
+   }
+   .direction-item:hover .direction-item__image {
+   }
+   .direction-item:hover .direction-item__icon {
+   }
+}
+@media (max-width: 650px) {
+   .direction-item__image {
+      border-radius: 16px;
+      overflow: hidden;
+      width: 100%;
+      height: 220px;
+   }
+}
