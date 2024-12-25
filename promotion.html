@@ -276,7 +276,7 @@
                      </p>
                      <ul class="promotion-hero__btns">
                         <li>
-                           <button class="promotion-btn white">
+                           <button class="promotion-btn white modal__link" href="#aboutModal">
                               <span>Обсудить проект</span>
                               <div class="circle">
                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -290,7 +290,7 @@
                            </button>
                         </li>
                         <li>
-                           <button class="black promotion-btn">
+                           <button class="black promotion-btn modal__link" href="#caseModal">
                               <span>Смотреть цены</span>
                               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="rotate: 135deg"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -315,6 +315,89 @@
                      </li>
                      <li>
                         <span>лет в маркетинге</span><span>7+</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="modal promotion-about" id="aboutModal">
+               <div class="modal__content promotion-about__content">
+                  <div class="modal__close">
+                     <img src="img/promotion/x-close.svg" alt="">
+                  </div>
+                  <div class="promotion-about__title">Расскажите о вашей задаче и запустите ваши продажи уже завтра
+                  </div>
+                  <ul class="promotion-about__inputs">
+                     <li>
+                        <input type="text" placeholder="Ваше имя">
+                     </li>
+                     <li>
+                        <input type="text" placeholder="Ваш номер телефона, телеграм или Email">
+                     </li>
+                  </ul>
+                  <button class="promotion-about__btn promotion-btn blue">
+                     <span>Оставить заявку</span>
+                     <div class="circle">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                              fill="#195AFF" />
+                        </svg>
+
+                     </div>
+                  </button>
+                  <p>Нажимая на кнопку, вы даете согласие на обработку своих <a href="#" target="_blank">персональных
+                        данных</a></p>
+               </div>
+            </div>
+            <div class="modal case-modal" id="caseModal">
+               <div class="modal__content promotion-about__content case-modal__content">
+                  <div class="modal__close">
+                     <img src="img/promotion/x-close.svg" alt="">
+                  </div>
+                  <div class="promotion-about__title">Продвинули магазин по продаже подгузников для взрослых
+                  </div>
+                  <ul class="case-modal__list">
+                     <li class="case-modal__item">
+                        <span class="case-modal__subtitle">Результаты до сотрудничества</span>
+                        <ul class="case-modal__sublist">
+                           <li>
+                              <span>Оборот:</span><span> 1 103 037 руб</span>
+                           </li>
+                           <li>
+                              <span>Расходы по РК:</span><span> 79 320 руб</span>
+                           </li>
+                           <li>
+                              <span>Выручка:</span><span> 834 340 руб</span>
+                           </li>
+                           <li>
+                              <span>ДРР по РК:</span><span> 9,5%</span>
+                           </li>
+                           <li>
+                              <span>Общий ДРР:</span><span> 7,2%</span>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="case-modal__item">
+                        <span class="case-modal__subtitle">Результаты в период сотрудничества через месяц
+                           <img src="img/promotion/fire.png" alt="">
+                        </span>
+                        <ul class="case-modal__sublist">
+                           <li>
+                              <span>Оборот:</span><span> 1 103 037 руб</span>
+                           </li>
+                           <li>
+                              <span>Расходы по РК:</span><span> 79 320 руб</span>
+                           </li>
+                           <li>
+                              <span>Выручка:</span><span> 834 340 руб</span>
+                           </li>
+                           <li>
+                              <span>ДРР по РК:</span><span> 9,5%</span>
+                           </li>
+                           <li>
+                              <span>Общий ДРР:</span><span> 7,2%</span>
+                           </li>
+                        </ul>
                      </li>
                   </ul>
                </div>
@@ -945,11 +1028,13 @@
    </div>
 
 
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
    <script src="js/script.min.js"></script>
    <script src="https://unpkg.com/imask"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="js/app.min.js"></script>
+   <!-- <script src="js/lexagreat.js"></script> -->
    <script src="js/promotion.js"></script>
 </body>
 
